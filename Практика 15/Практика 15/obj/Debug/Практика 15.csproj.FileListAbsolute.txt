@@ -8,3 +8,14 @@ C:\Users\305-10\Desktop\Practik2_Poleev Andrey _pr21\Практика 15\Пра�
 C:\Users\305-10\Desktop\Practik2_Poleev Andrey _pr21\Практика 15\Практика 15\obj\Debug\Практика 15.csproj.CoreCompileInputs.cache
 C:\Users\305-10\Desktop\Practik2_Poleev Andrey _pr21\Практика 15\Практика 15\obj\Debug\Практика 15.exe
 C:\Users\305-10\Desktop\Practik2_Poleev Andrey _pr21\Практика 15\Практика 15\obj\Debug\Практика 15.pdb
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика 15.csproj.AssemblyReference.cache
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика 15.csproj.SuggestedBindingRedirects.cache
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика_15.Form1.resources
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика_15.Properties.Resources.resources
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика 15.csproj.GenerateResource.cache
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика 15.csproj.CoreCompileInputs.cache
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика 15.exe
+C:\Users\андрей\Desktop\Практика 15\Практика 15\obj\Debug\Практика 15.pdb
+C:\Users\андрей\Desktop\Практика 15\Практика 15\bin\Debug\Практика 15.exe.config
+C:\Users\андрей\Desktop\Практика 15\Практика 15\bin\Debug\Практика 15.exe
+C:\Users\андрей\Desktop\Практика 15\Практика 15\bin\Debug\Практика 15.pdb

@@ -28,21 +28,21 @@ namespace Практика_15
         {
             double vaild = Vaild + a.Vaild ;
             double imaginary = Imaginary + a.Imaginary;
-            return $"{vaild} + {imaginary}i";
+            return $"{Math.Round(vaild), 2} + {Math.Round(imaginary, 2)}i";
         }
         //Разность
         public string Dif(ComplexNumbers a)
         {
             double vaild = Vaild - a.Vaild;
             double imaginary = Imaginary - a.Imaginary;
-            return $"{vaild} - {imaginary}i";
+            return $"{Math.Round(vaild),2} - {Math.Round(imaginary, 2)}i";
         }
         //Умножение
         public string Mul(ComplexNumbers a)
         {
             double vaild = Vaild * a.Vaild;
             double imaginary = Imaginary * a.Imaginary;
-            return $"{vaild} * {imaginary}i";
+            return $"{Math.Round(vaild),2} * {Math.Round(imaginary, 2)}i";
         }
 
     }

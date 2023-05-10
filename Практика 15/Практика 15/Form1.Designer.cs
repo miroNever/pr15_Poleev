@@ -30,9 +30,6 @@ namespace Практика_15
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.Sum = new System.Windows.Forms.RadioButton();
-            this.Dif = new System.Windows.Forms.RadioButton();
-            this.Mul = new System.Windows.Forms.RadioButton();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -43,6 +40,9 @@ namespace Практика_15
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.NumListBox = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.comboBoxOperations = new System.Windows.Forms.ComboBox();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -54,42 +54,6 @@ namespace Практика_15
             this.label1.Size = new System.Drawing.Size(542, 20);
             this.label1.TabIndex = 0;
             this.label1.Text = "Выберите действие которое хотите делать с комплексными числами";
-            // 
-            // Sum
-            // 
-            this.Sum.AutoSize = true;
-            this.Sum.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Sum.Location = new System.Drawing.Point(25, 59);
-            this.Sum.Name = "Sum";
-            this.Sum.Size = new System.Drawing.Size(69, 20);
-            this.Sum.TabIndex = 1;
-            this.Sum.TabStop = true;
-            this.Sum.Text = "Сумма";
-            this.Sum.UseVisualStyleBackColor = true;
-            // 
-            // Dif
-            // 
-            this.Dif.AutoSize = true;
-            this.Dif.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Dif.Location = new System.Drawing.Point(25, 82);
-            this.Dif.Name = "Dif";
-            this.Dif.Size = new System.Drawing.Size(88, 20);
-            this.Dif.TabIndex = 2;
-            this.Dif.TabStop = true;
-            this.Dif.Text = "Разность";
-            this.Dif.UseVisualStyleBackColor = true;
-            // 
-            // Mul
-            // 
-            this.Mul.AutoSize = true;
-            this.Mul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Mul.Location = new System.Drawing.Point(25, 105);
-            this.Mul.Name = "Mul";
-            this.Mul.Size = new System.Drawing.Size(101, 20);
-            this.Mul.TabIndex = 3;
-            this.Mul.TabStop = true;
-            this.Mul.Text = "Умножение";
-            this.Mul.UseVisualStyleBackColor = true;
             // 
             // textBox1
             // 
@@ -113,7 +77,7 @@ namespace Практика_15
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(21, 139);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(346, 16);
+            this.label2.Size = new System.Drawing.Size(345, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "Введите целую часть первого комплексного числа:";
             // 
@@ -123,7 +87,7 @@ namespace Практика_15
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(21, 199);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(356, 16);
+            this.label3.Size = new System.Drawing.Size(355, 16);
             this.label3.TabIndex = 7;
             this.label3.Text = "Введите мнимую часть первого комплексного числа:";
             // 
@@ -133,7 +97,7 @@ namespace Практика_15
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(21, 317);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(355, 16);
+            this.label4.Size = new System.Drawing.Size(354, 16);
             this.label4.TabIndex = 11;
             this.label4.Text = "Введите мнимую часть второго комплексного числа:";
             // 
@@ -143,7 +107,7 @@ namespace Практика_15
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(21, 257);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(345, 16);
+            this.label5.Size = new System.Drawing.Size(344, 16);
             this.label5.TabIndex = 10;
             this.label5.Text = "Введите целую часть второго комплексного числа:";
             // 
@@ -166,27 +130,64 @@ namespace Практика_15
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.Location = new System.Drawing.Point(35, 368);
+            this.button1.Location = new System.Drawing.Point(490, 294);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(140, 29);
+            this.button1.Size = new System.Drawing.Size(191, 29);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Ввычислить";
+            this.button1.Text = "Ввычислить из файла";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Calculate_Click);
             // 
             // NumListBox
             // 
             this.NumListBox.FormattingEnabled = true;
-            this.NumListBox.Location = new System.Drawing.Point(586, 59);
+            this.NumListBox.Location = new System.Drawing.Point(490, 131);
             this.NumListBox.Name = "NumListBox";
-            this.NumListBox.Size = new System.Drawing.Size(157, 173);
+            this.NumListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.NumListBox.Size = new System.Drawing.Size(279, 147);
             this.NumListBox.TabIndex = 13;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(490, 102);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(134, 23);
+            this.button2.TabIndex = 14;
+            this.button2.Text = "Загрузить из файла";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // comboBoxOperations
+            // 
+            this.comboBoxOperations.FormattingEnabled = true;
+            this.comboBoxOperations.Items.AddRange(new object[] {
+            "Сложение",
+            "Умножение",
+            "Вычитание"});
+            this.comboBoxOperations.Location = new System.Drawing.Point(25, 47);
+            this.comboBoxOperations.Name = "comboBoxOperations";
+            this.comboBoxOperations.Size = new System.Drawing.Size(213, 21);
+            this.comboBoxOperations.TabIndex = 15;
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.button3.Location = new System.Drawing.Point(35, 368);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(191, 29);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Ввычислить";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.comboBoxOperations);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.NumListBox);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
@@ -197,12 +198,10 @@ namespace Практика_15
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.Mul);
-            this.Controls.Add(this.Dif);
-            this.Controls.Add(this.Sum);
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,9 +210,6 @@ namespace Практика_15
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton Sum;
-        private System.Windows.Forms.RadioButton Dif;
-        private System.Windows.Forms.RadioButton Mul;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label2;
@@ -224,6 +220,9 @@ namespace Практика_15
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ListBox NumListBox;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.ComboBox comboBoxOperations;
+        private System.Windows.Forms.Button button3;
     }
 }
 
