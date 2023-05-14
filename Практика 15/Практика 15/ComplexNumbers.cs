@@ -40,8 +40,8 @@ namespace Практика_15
         //Умножение
         public string Mul(ComplexNumbers a)
         {
-            double vaild = Vaild * a.Vaild;
-            double imaginary = Imaginary * a.Imaginary;
+            double vaild = Vaild * a.Vaild - Imaginary * a.Imaginary;
+            double imaginary = Vaild * a.Imaginary + Imaginary * a.Vaild;
             return $"{Math.Round(vaild),2} * {Math.Round(imaginary, 2)}i";
         }
 

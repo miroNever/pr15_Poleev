@@ -114,7 +114,7 @@ namespace Практика_15
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox3.Location = new System.Drawing.Point(35, 340);
+            this.textBox3.Location = new System.Drawing.Point(35, 276);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(139, 22);
             this.textBox3.TabIndex = 9;
@@ -122,7 +122,7 @@ namespace Практика_15
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox4.Location = new System.Drawing.Point(35, 281);
+            this.textBox4.Location = new System.Drawing.Point(35, 340);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(139, 22);
             this.textBox4.TabIndex = 8;
